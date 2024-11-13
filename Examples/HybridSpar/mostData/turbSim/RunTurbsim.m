@@ -3,8 +3,8 @@ clc
 clear
 %% SETTINGS
 WINDvector=10;                             % Mean wind speeds vector (for each value a wind field file will be created)
-Xgrid=-60:10:30;                           % Wind field domain (surge-component) extension
-time_breakpoints=[0 200 399 500];          % Time breakpoints for with wind characteristics are defined
+Xgrid=-30:10:60;                           % Wind field domain (surge-component) extension
+time_breakpoints=[0 200 400 1800];         % Time breakpoints for with wind characteristics are defined
 elevations=[0 0 0 0]*pi/180;               % Wind speed elevation angle at time breakpoints (for WINDvector with more than 1 element: concatenate on first dimension)
 azimuths=[0 0 0 0]*pi/180;                 % Wind speed azimuth angle at time breakpoints (for WINDvector with more than 1 element: concatenate on first dimension)
 
