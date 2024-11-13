@@ -2,9 +2,9 @@
 clc
 clear
 %% SETTINGS
-WINDvector=[8 12];                     % how many velocities of the wind to put
+WINDvector=8;                          % how many velocities of the wind to put
 Xgrid=-30:10:60;                       % m
-time_breakpoints=[0 5000];
+time_breakpoints=[0 1000];
 elevations=[0 0]*pi/180;               % for WINDvector with more than 1 element: concatenate on first dimension
 azimuths=[0 0]*pi/180;                 % for WINDvector with more than 1 element: concatenate on first dimension
 
