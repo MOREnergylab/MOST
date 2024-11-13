@@ -3,10 +3,10 @@ clc
 clear
 %% SETTINGS
 WINDvector=10;                             % how many velocities of the wind to put
-Xgrid=-60:10:30;                           % m
-time_breakpoints=[0 200 399 500];
-elevations=[0 0 0 0]*pi/180;               % for WINDvector with more than 1 element: concatenate on first dimension
-azimuths=[0 0 0 0]*pi/180;                 % for WINDvector with more than 1 element: concatenate on first dimension
+Xgrid=-30:10:60;                           % m
+time_breakpoints=[0 1500];
+elevations=[0 0]*pi/180;                   % for WINDvector with more than 1 element: concatenate on first dimension
+azimuths=[0 0]*pi/180;                     % for WINDvector with more than 1 element: concatenate on first dimension
 
 filename_InputTurbsim='TurbsimInputFile.txt';      % name of the input file for turbsim
 deleteOut=true;                                    % check if temporary outputs of Turbsim must be deleted
