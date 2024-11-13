@@ -16,13 +16,13 @@ True                Clockwise       - Clockwise rotation looking downwind? (used
  
 --------Turbine/Model Specifications-----------------------
 17                  NumGrid_Z       - Vertical grid-point matrix dimension
-33                  NumGrid_Y       - Horizontal grid-point matrix dimension
+17                  NumGrid_Y       - Horizontal grid-point matrix dimension
 0.05                TimeStep        - Time step [seconds]
 1                   AnalysisTime    - Length of analysis time series [seconds] (program will add time if necessary: AnalysisTime = MAX(AnalysisTime, UsableTime+GridWidth/MeanHHWS) )
-1400                UsableTime      - Usable length of output time series [seconds] (program will add GridWidth/MeanHHWS seconds)
+1800                UsableTime      - Usable length of output time series [seconds] (program will add GridWidth/MeanHHWS seconds)
 150	                HubHt           - Hub height [m] (should be > 0.5*GridHeight)
-280.00              GridHeight      - Grid height [m] 
-500                 GridWidth       - Grid width [m] (should be >= 2*(RotorRadius+ShaftLength))
+280                 GridHeight      - Grid height [m] 
+300                 GridWidth       - Grid width [m] (should be >= 2*(RotorRadius+ShaftLength))
 0                   VFlowAng        - Vertical mean flow (uptilt) angle [degrees]
 0                   HFlowAng        - Horizontal mean flow (skew) angle [degrees]
   
