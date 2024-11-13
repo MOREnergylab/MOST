@@ -4,7 +4,7 @@ clear
 %% SETTINGS
 WINDvector=10;                             % how many velocities of the wind to put
 Xgrid=-30:10:60;                           % m
-time_breakpoints=[0 1500];
+time_breakpoints=[0 1500];                 % Time breakpoints for with wind characteristics are defined
 elevations=[0 0]*pi/180;                   % for WINDvector with more than 1 element: concatenate on first dimension
 azimuths=[0 0]*pi/180;                     % for WINDvector with more than 1 element: concatenate on first dimension
 
