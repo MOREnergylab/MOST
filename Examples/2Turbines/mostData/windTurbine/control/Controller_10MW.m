@@ -183,6 +183,7 @@ Ctrl.ROSCO.windFilter=windFilter;
 Ctrl.ROSCO.omegaFilter=omegaFilter;
 Ctrl.ROSCO.pitchFilter=pitchFilter;
 Ctrl.ROSCO.SPSFilter=SPSFilter;
+Ctrl.ROSCO.SS=SS;
 end
 
 %% BASELINE
@@ -242,7 +243,7 @@ Ctrl.Baseline.c1=c(1);
 Ctrl.Baseline.c2=c(2);
 Ctrl.Baseline.c3=c(3);
 Ctrl.Baseline.omegaFilter=omegaFilter;
-
+Ctrl.Baseline.SS=SS;
 end
 %% SAVE
 save("Control_10MW","Ctrl")
