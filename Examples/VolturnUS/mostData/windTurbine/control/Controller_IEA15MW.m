@@ -58,10 +58,10 @@ csi_theta_BL=0.3;              % Damping ratio (-)
 end
 %% Yaw Control
 Ctrl.YawControl.maxYawRate=0.5*pi/180; %rad/s
-Ctrl.YawControl.Kp=0.5; 
-Ctrl.YawControl.Ki=0;
+Ctrl.YawControl.Kp=0.05; 
+Ctrl.YawControl.Ki=0.001;
 Ctrl.YawControl.Kd=1000;
-Ctrl.YawControl.tau_system=30;
+Ctrl.YawControl.tau_system=20;
 end
 %% Linearization
 delta_rel=1e-6;
@@ -182,6 +182,7 @@ Ctrl.ROSCO.windFilter=windFilter;
 Ctrl.ROSCO.omegaFilter=omegaFilter;
 Ctrl.ROSCO.pitchFilter=pitchFilter;
 Ctrl.ROSCO.SPSFilter=SPSFilter;
+Ctrl.ROSCO.SS=SS;
 end
 
 %% BASELINE
@@ -241,7 +242,7 @@ Ctrl.Baseline.c1=c(1);
 Ctrl.Baseline.c2=c(2);
 Ctrl.Baseline.c3=c(3);
 Ctrl.Baseline.omegaFilter=omegaFilter;
-
+Ctrl.Baseline.SS=SS;
 end
 %% SAVE
 save("Control_IEA15MW","Ctrl")

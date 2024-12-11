@@ -58,10 +58,10 @@ csi_theta_BL=0.3;              % Damping ratio (-)
 end
 %% Yaw Control
 Ctrl.YawControl.maxYawRate=0.5*pi/180; %rad/s
-Ctrl.YawControl.Kp=2000; 
-Ctrl.YawControl.Ki=0;
-Ctrl.YawControl.Kd=0;
-Ctrl.YawControl.tau_system=15;
+Ctrl.YawControl.Kp=0.05; 
+Ctrl.YawControl.Ki=0.001;
+Ctrl.YawControl.Kd=1000;
+Ctrl.YawControl.tau_system=20;
 end
 %% Linearization
 delta_rel=1e-6;
